@@ -1,7 +1,7 @@
 
    var debates_url = window.location.hash;
    if(!debates_url){
-     debates_url = "debates2012-02-06a.xml";
+     debates_url = "debates2014-11-19a.xml";
    }
    debates_url = debates_url.replace("#","");
 
