@@ -1,23 +1,19 @@
-==Getting started==
+# Getting started
 
 * Download a speech from http://www.theyworkforyou.com/pwdata/scrapedxml/debates/
 
-* edit 
+* open "analytics.html" with the name of your file appended after a hash, in a modern browser from the desktop 
+e.g. file:///Users/libby/beancounter_hansard/analytics.html
 
-* open "analytics.html" in a modern 
-browser from the desktop e.g. 
-file:///Users/libby/beancounter_hansard/analytics.html
-
-
-* you should see some pretty graphs showing what we've been doing on irc lately
+* you should see some pretty graphs showing who was speaking and what about
 
 
-==Background==
+#
 
 It's designed to show you some basic graphs and data summarising some sort 
 of activity. It was designed to be used with social networking activity 
 but here we've applied it to some other ideas. The design is by 
-http://fabrique.nl from a brief by vicky.buser@bbc.co.uk
+http://fabrique.nl from a brief by [Vicky Buser](https://uk.linkedin.com/in/vickybuser)
 
 Because it has applications with various datasets I've created several 
 abstractions over the graphs. The raw data (from logs, or hansard or 
