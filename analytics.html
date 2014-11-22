@@ -20,7 +20,6 @@ function go(data){
   init(callback);
 }
 
-
 //up to three pie charts are allowed in this particular one
 var count_pies = 0;
 
@@ -369,6 +368,7 @@ function make_top_two(the_top_two){
     $("#top_two_legend").append("<div class='scale' > <span id='first_interest'>"+names[0]+"</span> <span style='width:100px;background:"+colours[0]+";'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>");  
     $("#top_two_legend").append("<div class='scale' > <span id='first_interest'>"+names[1]+"</span> <span style='width:100px;background:"+colours[1]+";'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>");  
 
+
 }
 
 
@@ -379,10 +379,9 @@ function make_top_two(the_top_two){
 <body onload="go()">
 
    <div id="header">
-     <div class='title'>BEANCOUNTER</div>
+     <div class='title'>BEANCOUNTER <span id="debate_date"></span></div>
      <br clear='both' />
      <div class='subtitle'>A little experiment with visualising <a href="http://www.theyworkforyou.com/pwdata/scrapedxml/debates/">some Hansard data</a> from <a href="http://www.theyworkforyou.com">TheyWorkForYou</a></div>
-
    </div>
 
 

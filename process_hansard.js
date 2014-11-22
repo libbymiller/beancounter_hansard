@@ -4,8 +4,20 @@
      debates_url = "debates2014-11-19a.xml";
    }
    debates_url = debates_url.replace("#","");
+   var debate_date = debates_url.replace("debates","").replace(/.?\.xml/,"");
 
    function init(callback){
+
+      //add the date in
+
+      if(debate_date){
+        var parts = debate_date.match(/(\d+)/g);
+         if(parts){
+           var time = new Date(parts[0], parts[1], parts[2]); //
+           var text_time = process_date(time);
+           $("#debate_date").html("for "+text_time);
+         }
+      }
 
       var url = "stopList.txt";
       $.ajax({
@@ -24,7 +36,7 @@
    }
 
    var stoplist = {};
-//change to process members list
+
    function process_stoplist(data,callback){
 
       var arr = data.split("\n");
@@ -191,8 +203,6 @@ console.log(people);
         }
       }
 
-console.log("new_entities");
-console.log(new_entities);
 
 //process words
       for(var w in words_arr){
