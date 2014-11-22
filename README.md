@@ -3,7 +3,7 @@
 * Download a speech from http://www.theyworkforyou.com/pwdata/scrapedxml/debates/
 
 * open "analytics.html" with the name of your file appended after a hash, in a modern browser from the desktop 
-e.g. file:///Users/libby/beancounter_hansard/analytics.html
+e.g. file:///Users/libby/beancounter_hansard/analytics.html#debates2014-11-19a.xml
 
 * you should see some pretty graphs showing who was speaking and what about
 
